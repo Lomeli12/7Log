@@ -25,4 +25,4 @@ They should have insturctions on how to use the DLL in VB.Net, which is pretty e
 
 [anthonylomeli11@gmail.com](mailto:anthonylomeli11@gmail.com)
 
-Have fun with my code. I know I did...*snicker*
+Have fun with my code. I know I did...*-snicker-*
