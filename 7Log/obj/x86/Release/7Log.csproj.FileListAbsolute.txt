@@ -1,0 +1,5 @@
+C:\Users\Anthony\AppData\Local\Temporary Projects\7Log\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Anthony\AppData\Local\Temporary Projects\7Log\obj\x86\Release\_7Log.Form1.resources
+C:\Users\Anthony\AppData\Local\Temporary Projects\7Log\obj\x86\Release\_7Log.Properties.Resources.resources
+C:\Users\Anthony\AppData\Local\Temporary Projects\7Log\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Anthony\AppData\Local\Temporary Projects\7Log\obj\x86\Release\GenerateResource.write.1.tlog
