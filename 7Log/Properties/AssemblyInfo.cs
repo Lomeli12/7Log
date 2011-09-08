@@ -27,7 +27,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Anthoy Lomeli.c.cc")]
 [assembly: AssemblyProduct("7Log")]
-[assembly: AssemblyCopyright("Copyright ©  2011 Anthony Lomeli")]
+[assembly: AssemblyCopyright("Copyright ©  2011 Anthony Lomeli & RAMdom Code")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -49,5 +49,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.0.2.4")]
-[assembly: AssemblyFileVersion("3.0.2.4")]
+[assembly: AssemblyVersion("3.5.0.0")]
+[assembly: AssemblyFileVersion("3.5.0.0")]
