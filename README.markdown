@@ -3,7 +3,7 @@
 
 ## License:
 
-Licensed under GPL version 3.0 by Anthony Lomeli
+Licensed under GPL version 3.0 Copyright © 2007 Free Software Foundation
 
 ## Project Details
 
