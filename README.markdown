@@ -1,5 +1,6 @@
 7Log
 ====
+_By Anthony Lomeli_
 
 ## Source Version:
 
