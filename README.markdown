@@ -19,7 +19,7 @@ Licensed under GPL version 3.0 Copyright (c) 2007 Free Software Foundation
 ## System Requirements:
 
    1. Windows 7 Home Basic or higher(Windows 7 Starter will not work)
-   2. 3MB of Storage Space
+   2. About 8MB of Storage Space
    3. Microsoft .NET Framework 4.0 or higher. Get it here: http://bit.ly/MicrosoftDotNet4
    4. Admin Privileges 
 	
