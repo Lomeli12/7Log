@@ -10,7 +10,7 @@ Source will always be updated to the newest version. For older versions of the s
 
 ## License:
 
-Licensed under GPL version 3.0 Copyright (c) 2007 Free Software Foundation
+Licensed under GPL version 3.0 Copyright &copy; 2007 Free Software Foundation
 
 ## Project Details:
 
