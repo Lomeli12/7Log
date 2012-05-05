@@ -4,7 +4,7 @@ _By Anthony Lomeli_
 
 ## Source Version:
 
-Version: 3.5
+Version: 3.7
 
 Source will always be updated to the newest version. For older versions of the source, visit 7Log's SVN Repository http://code.google.com/p/7log/source/browse/#svn%2Ftrunk
 
@@ -25,8 +25,7 @@ Licensed under GPL version 3.0 Copyright &copy; 2007 Free Software Foundation
 	
 ## Image Optimization:
 
-To use Image Optimization, just complie 7Log, as it is already set up to use it. If something went wrong(which nothing should, but you never know) download the free trial DLL from http://www.imageoptimizer.net/Integration.aspx
-They should have insturctions on how to use the DLL in VB.Net, which is pretty easy to translate into C# (especially since I already wrote it in the source ^_^)
+To use Image Optimization, just complie 7Log, as it is already set up to use it. 
 
 ## Help:
 

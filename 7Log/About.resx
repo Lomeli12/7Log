@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfYAAAG8CAYAAAAsKIe2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfaCxIDLTj432fE
+        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfaCxIDLTj432fE
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAP9XSURBVHhe7J0FeFRn+re/
         /a90d7tb3bpDcS1W3N0thJAQA2K4Oy11dy8tUIpWcHeXeDKTBHd3Sn3L893Pe86ZnEyhAZq2293Z67qv
         od0WOc3Mnd/7PvL//l/gf4En8Dt8AqdOnfoDXAP/giJQEWpBC+gEkRAP/WAIjDx+/PgjvI6Fp+BpeA5e
@@ -3653,13 +3653,13 @@
 </value>
   </data>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>7Log Version 3.5
+    <value>7Log Version 3.7
 
 7Log, a simple Windows 7 Logon Screen Background Modifier
-Copyright © 2010 - 2011 Anthony Lomeli &amp; RAMdom Code
+Copyright © 2010 - 2012 Anthony Lomeli
 
-Created using Microsoft Visual Studio 2010 Professional
-Copyright © 2010 - 2011 Microsoft Corporation
+Created using Microsoft Visual C# 2010 Express Edition
+Copyright © 2010 - 2012 Microsoft Corporation
 All Rights reseverd
 
 GNU General Public License
@@ -3686,7 +3686,7 @@ If you have any questions or comments, contact
 me at: anthonylomeli11@gmail.com
 I love hearing good feedback from you guys.
 
-7Log Copyright © 2010 Anthony Lomeli
+7Log Copyright © 2012 Anthony Lomeli
 This Program comes with ABSOLUTELY NO WARRANTY.
 This is free software and you are welcome to redistribute it
 under certain conditions.</value>

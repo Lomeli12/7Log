@@ -23,6 +23,7 @@ namespace _7Log
             RegistryKey Textl = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", true);
             Title.SetValue("legalnoticecaption", textBox1.Text, RegistryValueKind.String);
             Textl.SetValue("legalnoticetext", textBox2.Text, RegistryValueKind.String);
+            MessageBox.Show("Login Message applied");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -31,6 +32,7 @@ namespace _7Log
             RegistryKey Textl = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", true);
             Title.SetValue("legalnoticecaption", "", RegistryValueKind.String);
             Textl.SetValue("legalnoticetext", "", RegistryValueKind.String);
+            MessageBox.Show("Login Message removed");
         }
 
     }

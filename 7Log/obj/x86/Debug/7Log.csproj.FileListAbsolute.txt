@@ -11,14 +11,12 @@ C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debu
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\7Log.pdb
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\bin\Debug\7Log.exe
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\bin\Debug\7Log.pdb
-C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\_7Log.Properties.Resources.resources
-C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\_7Log.About.resources
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\bin\Debug\7Log.exe.config
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\_7Log.MainForm.resources
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\_7Log.Loginhacks.resources
 C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\_7Log.LoginHackGUI4.resources
-C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\_7Log.ConfirmOS.resources
-C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\bin\Debug\ImageOptimizer.API.dll
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\C#\7Log\7Log\obj\x86\Debug\GenerateResource.write.1.tlog

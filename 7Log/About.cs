@@ -33,5 +33,10 @@ namespace _7Log
             InitializeComponent();
         }
 
+        
+        void AboutLoad(object sender, EventArgs e)
+        {
+        	textBox1.Text = textBox1.Text;
+        }
     }
 }

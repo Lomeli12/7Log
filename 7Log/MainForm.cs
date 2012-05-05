@@ -20,10 +20,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Geeks.ImageOptimizer.API;
 using Microsoft.Win32;
 
 namespace _7Log
@@ -56,66 +56,6 @@ namespace _7Log
                     System.IO.Directory.CreateDirectory(@"C:\Windows\System32\oobe\info\backgrounds");
                     MessageBox.Show("Backgrounds folder created!");
                  }
-            /* Checks if the user is using Windows Vista or Windows 7
-            ConfirmOS ConOs = new ConfirmOS();
-            if (System.IO.Directory.Exists(@"\System\") == false)
-            {
-                if (Environment.OSVersion.Version.Build <= 6999)
-                {
-                    ConOs.TextValue1 = "7Log has determined that you are using a version of Windows Vista. Is that true.";
-                    ConOs.TextValue2 = "Yes, I'm using Windows Vista";
-                    ConOs.TextValue3 = "No, I'm using Windows 7";
-                    ConOs.OS1 = "Vista";
-                    ConOs.OS2 = "7";
-                    ConOs.ShowDialog();
-                }
-                else if (Environment.OSVersion.Version.Build >= 7600)
-                {
-                    ConOs.TextValue1 = "7Log has determined that you are using a version of Windows 7. Is that true.";
-                    ConOs.TextValue2 = "Yes, I'm using Windows 7";
-                    ConOs.TextValue3 = "No, I'm using Windows Vista";
-                    ConOs.OS1 = "7";
-                    ConOs.OS2 = "Vista";
-                    ConOs.ShowDialog();
-                }
-                else if (Environment.OSVersion.Version.Build < 6000)
-                {
-                    MessageBox.Show("Your OS is not supported");
-                    Application.Exit();
-                }
-            }
-            else if (System.IO.Directory.Exists(@"\System\") == true)
-            {
-                if (System.IO.File.Exists(@"\System\7.7sav") == true)
-                {
-                    if (System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == true)
-                    {
-                        pictureBox1.ImageLocation = @"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg";
-                        textBox1.Text = "Current Login Background";
-                    }
-                    else if (System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == false)
-                    {
-                        textBox1.Text = "Default Login Background";
-                    }
-                    if (System.IO.Directory.Exists(@"C:\Windows\System32\oobe\info\backgrounds") == true)
-                    {
-
-                    }
-                    else if (System.IO.Directory.Exists(@"C:\Windows\System32\oobe\info\backgrounds") == false)
-                    {
-                        System.IO.Directory.CreateDirectory(@"C:\Windows\System32\oobe\info\backgrounds");
-                        MessageBox.Show("Backgrounds folder created!");
-                    }
-                }
-                else if (System.IO.File.Exists(@"\System\Vista.7sav") == true)
-                {
-                    lgoinHacksToolStripMenuItem.Enabled = false;
-                    button2.Enabled = false;
-                    recreateBackgroundFolderToolStripMenuItem.Enabled = false;
-                    reinstallOEMBackgroundToolStripMenuItem.Enabled = false;
-                }
-            }
-             */
         }
 
         private void button5_Click(object sender, EventArgs e)//Donate to me!
@@ -140,47 +80,28 @@ namespace _7Log
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)//Applying the login background
         {
-            //the following detects the size of the file in byets
-            System.IO.FileInfo fileInfo = new System.IO.FileInfo(openFileDialog1.FileName);
-            if (fileInfo.Length > 262144)
+        	int width = Screen.PrimaryScreen.Bounds.Width;
+        	int height = Screen.PrimaryScreen.Bounds.Height;
+            //optimiezs the file size to fit your screen and shrink the size.
+            //Checks to see if there is already a login file in use, and deletes it if is.
+            if (System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == true)
             {
-                //optimiezs the file size to fit your screen and shrink the size.
-                //Checks to see if there is already a login file in use, and deletes it if is.
-                if (System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == true)
-                {
-                    ImageOptimizer optimizer = new ImageOptimizer(); 
-                    pictureBox1.ImageLocation = openFileDialog1.FileName;
-                    System.IO.File.Delete(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg");
-                    optimizer.Optimize(openFileDialog1.FileName, @"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg");
-                    textBox1.Text = openFileDialog1.FileName;
-                }
-                else if (System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == false)
-                {
-                    pictureBox1.ImageLocation = openFileDialog1.FileName;
-                    ImageOptimizer optimizer = new ImageOptimizer();
-                    optimizer.Optimize(openFileDialog1.FileName, @"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg");
-                    textBox1.Text = openFileDialog1.FileName;
-                }
-                MessageBox.Show("Login successfully applied!");
+                pictureBox1.ImageLocation = openFileDialog1.FileName;
+                System.IO.File.Delete(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg");
+                Bitmap bmp = new Bitmap(Image.FromFile(openFileDialog1.FileName), new Size(width, height));
+                bmp.Save(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg", ImageFormat.Jpeg);
+                bmp.Dispose();
+                textBox1.Text = openFileDialog1.FileName;
             }
-            else if (fileInfo.Length <= 262144)
+             else if (System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == false)
             {
-                //runs 7Log normally.
-                if(System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == true)
-                {
-                    pictureBox1.ImageLocation = openFileDialog1.FileName;
-                    System.IO.File.Delete(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg");
-                    System.IO.File.Copy(openFileDialog1.FileName, @"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg");
-                    textBox1.Text = openFileDialog1.FileName;
-                }
-                else if (System.IO.File.Exists(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg") == false)
-                {
-                    pictureBox1.ImageLocation = openFileDialog1.FileName;
-                    System.IO.File.Copy(openFileDialog1.FileName, @"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg");
-                    textBox1.Text = openFileDialog1.FileName;
-                }
-                MessageBox.Show("Login successfully applied!");
+                pictureBox1.ImageLocation = openFileDialog1.FileName;
+                Bitmap bmp = new Bitmap(Image.FromFile(openFileDialog1.FileName), new Size(width, height));
+                bmp.Save(@"C:\Windows\System32\oobe\info\backgrounds\backgroundDefault.jpg", ImageFormat.Jpeg);
+                bmp.Dispose();
+                textBox1.Text = openFileDialog1.FileName;
             }
+                MessageBox.Show("Login successfully applied!");
         }
 
         private void restoreLoginBackgroundToolStripMenuItem_Click(object sender, EventArgs e)
@@ -250,7 +171,7 @@ namespace _7Log
         private void websiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //GOES TO MY WEBSITE!
-            System.Diagnostics.Process.Start("http://anthony-lomeli.co.cc/?page_id=13");
+            System.Diagnostics.Process.Start("http://anthony-lomeli.co.cc/programs/7log-2");
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)

@@ -202,7 +202,7 @@ namespace _7Log
             // 
             this.openFileDialog1.FileName = "Select Login Image";
             this.openFileDialog1.Filter = "JPG Images (*.jpg)|*.jpg|All Supported Images(*.jpg,*.png,*.gif,*.bmp)|*.jpg;*.pn" +
-                "g;*.gif;*.bmp";
+    "g;*.gif;*.bmp";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // pictureBox1
@@ -252,7 +252,7 @@ namespace _7Log
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(82, 48);
             this.button3.TabIndex = 6;
-            this.button3.Text = "Restore Defauld Background";
+            this.button3.Text = "Restore Default Background";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

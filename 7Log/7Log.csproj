@@ -65,9 +65,6 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ImageOptimizer.API">
-      <HintPath>..\..\..\..\..\..\..\..\VS_dlls\ImageOptimizer\ImageOptimizer.API.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore">
     </Reference>
     <Reference Include="PresentationFramework">
@@ -102,13 +99,6 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfirmOS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfirmOS.Designer.cs">
-      <DependentUpon>ConfirmOS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginHack4.cs" />
     <Compile Include="LoginHackGUI4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,9 +122,6 @@
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmOS.resx">
-      <DependentUpon>ConfirmOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginHackGUI4.resx">
       <DependentUpon>LoginHackGUI4.cs</DependentUpon>
@@ -169,9 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="7Log New Icon.ico" />
-    <Content Include="AboutLogo.png">
-      <SubType>Image</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

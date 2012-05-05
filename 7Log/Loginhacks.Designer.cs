@@ -91,8 +91,8 @@ namespace _7Log
             this.textBox1.Size = new System.Drawing.Size(325, 109);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Hack information will appear here. If you have a hack to customize a login screen" +
-                ", contact me at: anthonylomeli11@gmail.com\r\n\r\nThank the following people for the" +
-                " hacks:\r\nBrink - SevenForums Admin";
+    ", contact me at: anthonylomeli11@gmail.com\r\n\r\nThank the following people for the" +
+    " hacks:\r\nBrink - SevenForums Admin";
             // 
             // button1
             // 
@@ -115,8 +115,13 @@ namespace _7Log
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Loginhacks";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Loginhacks";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

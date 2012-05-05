@@ -56,8 +56,8 @@ namespace _7Log
             }
             else if (listBox1.SelectedItem == "Login Message")
             {
-                pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-                pictureBox1.ImageLocation = Environment.CurrentDirectory + @"\Images\No Shadow.jpg";
+                pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+                pictureBox1.ImageLocation = Environment.CurrentDirectory + @"\Images\message_on_logon_screen.png";
                 textBox1.Text = "Lets you add a message that appears before the user list appears.";
             }
             else if (listBox1.SelectedItem == "Login with Password")
@@ -82,30 +82,35 @@ namespace _7Log
             {
                 //System.Diagnostics.Process.Start(@"Logon Hacks\Default_Log_On_Text.reg");
                 Texts.SetValue("ButtonSet", 0, RegistryValueKind.DWord);
+                MessageBox.Show("Hack applied");
             }
             else { }
             if (listBox1.SelectedItem == "Darker Login Text Shadow")
             {
                 //System.Diagnostics.Process.Start(@"Logon Hacks\Darker_Log_On_Text_Shadow.reg");
                 Texts.SetValue("ButtonSet", 1, RegistryValueKind.DWord);
+                MessageBox.Show("Hack applied");
             }
             else { }
             if (listBox1.SelectedItem == "No Login Text Shadow")
             {
                 //System.Diagnostics.Process.Start(@"Logon Hacks\No_Log_On_Text_Shadow.reg");
                 Texts.SetValue("ButtonSet", 2, RegistryValueKind.DWord);
+                MessageBox.Show("Hack applied");
             }
             else { }
             if (listBox1.SelectedItem == "Login with Password")
             {
                 //System.Diagnostics.Process.Start(@"Logon Hacks\No_Log_On_Text_Shadow.reg");
                 Pass.SetValue("dontdisplaylastusername", 0, RegistryValueKind.DWord);
+                MessageBox.Show("Hack applied");
             }
             else { }
             if (listBox1.SelectedItem == "Login with Password and Username")
             {
                 //System.Diagnostics.Process.Start(@"Logon Hacks\No_Log_On_Text_Shadow.reg");
                 Pass.SetValue("dontdisplaylastusername", 1, RegistryValueKind.DWord);
+                MessageBox.Show("Hack applied");
             }
             else { }
             if (listBox1.SelectedItem == "Login Message")
